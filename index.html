@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+    <style>
+        body {
+            background-color: #fff7f0;
+            color: #493b45;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 40px;
+        }
+
+        h1 {
+            color: #b45b75;
+            font-size: 58px;
+        }
+
+        h2 {
+            color: #b45b75;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .card {
+            background-color: white;
+            padding: 30px;
+            margin: 30px auto;
+            width: 70%;
+            border-radius: 20px;
+        }
+
+        button {
+            background-color: #b45b75;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 20px;
+            font-size: 16px;
+            
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Hi, I'm Alexa!</h1>
+    <p>Welcome!</p>
+
+    <div class="card">
+        <h2>About Me</h2>
+        <p>
+            I'm a visual design student who loves illustration,
+            typography, and creating things that are both fun and meaningful.
+        </p>
+
+        <h2>Things I Love</h2>
+        <p>Art and design · Books · Illustration </p>
+
+        <button onclick="showMessage()">Click me</button>
+        <p id="message"></p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").textContent =
+                "Thanks for stopping by!";
+        }
+    </script>
+
+</body>
+</html>
